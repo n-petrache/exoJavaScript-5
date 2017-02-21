@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" name ="valider" onClick="validation()">Valider</button>
+        </form>
+        <script>
+        /* la fonction permet de récupérer les nombres saisis dans le formulaire
+        et d'en afficher la multiplication dans une boîte de dialogue */
+            function validation() {
+                var num1 = document.getElementById("premier_nombre").value;
+                var num2 = document.getElementById("deuxieme_nombre").value;
+
+                alert(parseInt(num1) * parseFloat(num2));
+            };
+        </script>
+    </body>
+</html>
